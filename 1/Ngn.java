@@ -24,8 +24,8 @@ public class Ngn extends GLCanvas implements GLEventListener, KeyListener {
 	int xSize = 3;
 	int ySize = 3;
 	int[][] testData = { // {x, y, z, r, g, b}
-		{0,0,-1, 1, 0, 0},
-		{0,1,-1, 1, 0, 0},
+		{0,2,-1, 0, 0, 1},
+		{1,2,-1, 1, 0, 1},
 		{1,0,-1, 1, 0, 0},
 		{1,1,-1, 1, 0, 0},
 		{0,-1,-1, 1, 0, 0},
@@ -209,7 +209,7 @@ public class Ngn extends GLCanvas implements GLEventListener, KeyListener {
 		for(int[] i : testData) {
 			gl.glLoadIdentity();
 			gl.glTranslatef(0.0f, 0.0f, -10.0f);
-			gl.glRotatef(-angle, 0.0f, 1.0f, 1.0f); // rotate about the y-axis
+			gl.glRotatef(-angle, 0.0f, 1.0f, 0.1f * sin); // rotate about the y-axis
 			gl.glBegin(GL_QUADS);
 				gl.glColor3f(i[3], i[4], i[5]);
 				gl.glVertex3d(i[0]+(1-GAP_SIZE), i[1]+(1-GAP_SIZE), i[2]);
