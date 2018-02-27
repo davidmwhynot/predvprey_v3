@@ -1,11 +1,11 @@
 # run
 ```
-java -Djava.library.path=..\vendor\jogl-2.1\lib;..\vendor\jogl-2.1\lib -cp "..\vendor\jogl-2.1\jar\gluegen-rt.jar;..\vendor\jogl-2.1\jar\jogl-all.jar;." Fullscreen_Template
+java -Djava.library.path=..\vendor\jogl-2.1\lib;..\vendor\jogl-2.1\lib -cp "..\vendor\jogl-2.1\jar\gluegen-rt.jar;..\vendor\jogl-2.1\jar\jogl-all.jar;." Ngn
 ```
 
 # compile
 ```
-javac -cp "..\vendor\jogl-2.1\jar\gluegen-rt.jar;..\vendor\jogl-2.1\jar\jogl-all.jar;." Fullscreen_Template.java
+javac -cp "..\vendor\jogl-2.1\jar\gluegen-rt.jar;..\vendor\jogl-2.1\jar\jogl-all.jar;." Ngn.java
 ```
 
 # orig
